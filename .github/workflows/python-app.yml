@@ -26,3 +26,18 @@ jobs:
     - name: test
       run: |
         python myPyTest.py
+    - name: Send mail
+      uses: dawidd6/action-send-mail@v2
+      with:
+       server_address: smtp.gmail.com
+       server_port: 465
+       username: meeting.user1poojitha@gmail.com
+       password: P00jith@
+       subject: Github Actions job result
+       body: Build job of ${{github.repository}} completed successfully!
+       to: poojitha.addanki@gmail.com
+       from: Luke Skywalker # <user@example.com>
+       # Optional content type (defaults to text/plain):
+       content_type: text/html
+       # Optional attachments:
+       attachments: ./test.txt
