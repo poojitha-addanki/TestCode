@@ -38,8 +38,8 @@ jobs:
       with:
        server_address: smtp.gmail.com
        server_port: 465
-       username: meeting.user1poojitha@gmail.com
-       password: P00jith@
+       username: saijyothi.addanki@gmail.com
+       password: suirjrqxxhwrbzam
        subject: Github Actions job result
        body: Build job of ${{github.repository}} completed successfully!
        to: poojitha.addanki@gmail.com
